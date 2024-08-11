@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Frontend Mentor | Contact form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/script.js" defer></script>
+        <script src="js/sweetalert.min.js"></script>
+    </head>
+
+    <body>
+        <form id="contactForm" class="container">
+            <h1>Contact Us</h1>
+            <!--        first name       -->
+            <div class="input__flex">
+                <div class="caja">
+                    <h2 class="title">First Name<span>*</span></h2>
+                    <input type="text" name="" id="" class="input__dato">
+                    <p class="required">This field is required</p>
+                </div>
+                <div class="caja">
+                    <h2 class="title">Last Name<span>*</span></h2>
+                    <input type="text" name="" id="" class="input__dato">
+                    <p class="required">This field is required</p>
+                </div>
+            </div>
+
+            <!-- Email address -->
+            <div class="email__adress">
+                <h2 class="title">Email Address<span>*</span></h2>
+                <input type="text" name="" id="" class="input__dato">
+                <p class="required" id="pEmail"></p>
+            </div>
+
+            <!--        Query type -->
+            <div class="type">
+                <h2 class="title">Query Type<span>*</span></h2>
+                <div class="input__flex">
+                    <div class="caja">
+                        <input type="radio" name="query__type" id="radio1" class="input__radio">
+                        <label for="radio1" class="label__radio">General Enquiry</label>
+                    </div>
+                    <div class="caja">
+                        <input type="radio" name="query__type" id="radio2" class="input__radio">
+                        <label for="radio2" class="label__radio">Support Request</label>
+                    </div>
+                </div>
+                <p class="required">Please select a query type</p>
+            </div>
+
+            <!--        message      -->
+            <div class="message">
+                    <h2 class="title">Message<span>*</span></h2>
+                    <textarea name="textarea" id="" class="textarea"></textarea>
+                    <p class="required"> This field is required</p>
+            </div>
+
+            <!--        casilla de verificacion -->
+            <div class="casilla__verificacion">
+                <div class="casilla">
+                    <input type="checkbox" name="ckb" id="ckb" class="ckb">
+                    <label for="ckb" class="ckb-label">I consent to being contacted by the team<span>*</span></label>
+                </div>
+                <p class="required">To submit this form, please consent to being contacted</p>
+            </div>
+
+            <input type="submit" value="Submit" class="input__submit">
+
+        </form>
+    </body>
+</html>
